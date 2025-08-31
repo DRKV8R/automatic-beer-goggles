@@ -1,0 +1,61 @@
+# Example Configuration File for Automatic Beer Goggles
+# This file shows example configurations for different use cases
+
+[audio_mastering]
+# iZotope Ozone configuration (optional - will use FFmpeg fallback if not available)
+ozone_path = "/Applications/iZotope Ozone 11.app/Contents/MacOS/iZotope Ozone 11"
+preset_name = "Master Assistant"
+target_lufs = -14.0
+bit_depth = 24
+sample_rate = 44100
+normalize_loudness = true
+
+[video_generation]
+# Video encoding settings
+output_format = "mp4"
+fps = 30
+audio_bitrate = "128k"
+use_gpu_acceleration = true
+temp_dir = "/tmp/beer_goggles"
+
+[workflow]
+# Orchestration settings
+max_concurrent_jobs = 4
+output_base_dir = "./output"
+resume_on_failure = true
+log_file = "workflow.log"
+
+# Platform-specific overrides (optional)
+[platforms.youtube]
+# YouTube-specific settings
+video_bitrate = "8M"  # Higher quality for YouTube
+audio_bitrate = "192k"
+
+[platforms.tiktok]
+# TikTok-specific settings
+video_bitrate = "2M"  # Lower bitrate for smaller files
+fps = 30
+
+[platforms.instagram]
+# Instagram-specific settings
+video_bitrate = "3M"
+audio_bitrate = "128k"
+
+# Example presets for different use cases
+[presets.podcast]
+# Settings optimized for podcast content
+audio_mastering.target_lufs = -16.0
+video_generation.fps = 25
+platforms = ["youtube", "spotify"]
+
+[presets.music]
+# Settings optimized for music content
+audio_mastering.target_lufs = -14.0
+video_generation.fps = 30
+platforms = ["youtube", "instagram", "tiktok"]
+
+[presets.social_media]
+# Settings optimized for general social media
+audio_mastering.target_lufs = -14.0
+video_generation.fps = 30
+platforms = ["instagram", "tiktok", "twitter", "facebook"]
