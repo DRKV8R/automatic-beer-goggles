@@ -1,0 +1,44 @@
+name: automatic-beer-goggles
+description: Automated mastered audio-image video creation for social media platforms
+url: https://drkv8r.github.io/automatic-beer-goggles
+baseurl: /automatic-beer-goggles
+
+# GitHub Pages settings
+plugins:
+  - jekyll-default-layout
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+# Theme and layout
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+# Navigation
+navigation:
+  - title: Home
+    url: /
+  - title: Features
+    url: /#features
+  - title: Platforms
+    url: /#platforms
+  - title: Getting Started
+    url: /#getting-started
+  - title: GitHub
+    url: https://github.com/DRKV8R/automatic-beer-goggles
+
+# Social
+github_username: DRKV8R
+repository: DRKV8R/automatic-beer-goggles
+
+# SEO
+title: Automatic Beer Goggles
+tagline: Automated Video Creation for Social Media
+keywords: video creation, social media, audio mastering, ffmpeg, python, automation
+author: DRKV8R
+
+# Build settings
+safe: true
+incremental: false
