@@ -133,12 +133,12 @@ Batch process multiple audio files into videos for multiple platforms.
 
 | Platform  | Aspect Ratios   | Max Duration | Max File Size | Notes                                    |
 |-----------|-----------------|--------------|---------------|------------------------------------------|
-| Facebook  | 16:9, 9:16      | 240m 0s      | 4.0 GB        | Stories limited to 2 minutes           |
-| Instagram | 1:1, 9:16       | 10m 0s       | 4.0 GB        | Square or vertical recommended          |
-| YouTube   | 16:9, 9:16      | 15m 0s       | 128.0 GB      | 1080p minimum, Shorts 60s max          |
-| TikTok    | 9:16            | 3m 0s        | 288.0 MB      | Forced vertical videos                  |
-| Twitter   | 1:1, 16:9       | 2m 20s       | 512.0 MB      | Optimized square videos recommended     |
-| LinkedIn  | 16:9, 1:1, 9:16 | 3m 0s        | 5.0 GB        | Professional content, high-quality audio|
+| Facebook  | 16:9, 9:16      | 240 min      | 4 GB          | Stories limited to 2 minutes           |
+| Instagram | 1:1, 9:16       | 10 min       | 4 GB          | Square or vertical recommended          |
+| YouTube   | 16:9, 9:16      | 15 min       | 128 GB        | 1080p minimum, Shorts 60s max          |
+| TikTok    | 9:16            | 3 min        | 288 MB        | Forced vertical videos                  |
+| Twitter   | 1:1, 16:9       | 2:20 min     | 512 MB        | Optimized square videos recommended     |
+| LinkedIn  | 16:9, 1:1, 9:16 | 3 min        | 5 GB          | Professional content, high-quality audio|
 
 ## Contributing
 
